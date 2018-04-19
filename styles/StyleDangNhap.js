@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     flex: 1,      
     width: 330,
     alignItems: 'center',
-    // justifyContent: 'center'  
+    justifyContent: 'center'  
   },
   textInput: {
     borderWidth: 1,
