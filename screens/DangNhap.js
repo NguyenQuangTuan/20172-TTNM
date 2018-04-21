@@ -22,9 +22,7 @@ export default class DangNhap extends Component {
   }
 
   static navigationOptions = {
-    headerStyle: {
-      backgroundColor: '#f4511e',
-    },
+    header: null
   }
   onPress() {
     () => this.props.navigation.navigate('Home')
@@ -33,7 +31,7 @@ export default class DangNhap extends Component {
   render() {
     return (
       <View style={styleDangNhap.Container}>
-
+        <StatusBar hidden = {true}/>
         {/* Waper Logo */}
         <View style={styleDangNhap.waperLogo}>
           <Image source={logo} style={styleDangNhap.logo} />

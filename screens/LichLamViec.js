@@ -14,25 +14,25 @@ import { StackNavigator } from 'react-navigation';
 import styles from '../styles/style';
 
 
-export default class ThongBao extends Component {
+export default class LichLamViec extends Component {
     constructor(proqs) {
         super(proqs)
         
         data = [
             {
                 image: 'https://goo.gl/xrrHH9',
-                title: 'THÔNG BÁO THỨ 1',
-                content: 'Nội dung thông báo thứ 1'
+                title: 'CÔNG VIỆC 1',
+                content: 'Nội dung công việc thứ 1'
             },
             {
                 image: 'https://goo.gl/xrrHH9',
-                title: 'THÔNG BÁO THỨ 2',
-                content: 'Nội dung thông báo thứ 2'
+                title: 'CÔNG VIỆC 2',
+                content: 'Nội dung công việc thứ 2'
             },
             {
                 image: 'https://goo.gl/xrrHH9',
-                title: 'THÔNG BÁO THỨ 3',
-                content: 'Nội dung thông báo thứ 3'
+                title: 'CÔNG VIỆC 3',
+                content: 'Nội dung công việc thứ 3'
             },
         ]
         const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 })
@@ -44,7 +44,7 @@ export default class ThongBao extends Component {
     }
 
     static navigationOptions = {
-        title: 'Thông báo',
+        title: 'Lịch làm việc',
     };
 
     renderlist(dataSource) {
@@ -73,7 +73,7 @@ export default class ThongBao extends Component {
                 </TouchableOpacity>
                 </View>
                 <View style = {styles.textRight}>
-                    <Text style = {styles.textRight}>THÔNG BÁO</Text>
+                    <Text style = {styles.textRight}>LỊCH LÀM VIỆC 2/5/2018</Text>
                 </View>
             </View>
         )
