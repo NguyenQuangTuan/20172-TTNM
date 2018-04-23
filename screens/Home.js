@@ -30,6 +30,7 @@ export default class Home extends Component {
 
     static navigationOptions = {
         title: 'Trang chính',
+        
     };
 
     hienThiCay() {
